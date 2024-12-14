@@ -1,31 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://use.typekit.net/hzz7cph.css">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Portfolio</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper black">
+      <a href="#" class="brand-logo"> &nbsp Portfolio - CCL </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#projects">Ursula Shuixin Wang</a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="sidenav  accent-2" id="mobile-demo">
+    <li><a href="#projects"><p class="">Projects</p></a></li>
+    <li><a href="#contact"><p class="">Contact</p></a></li>
+  </ul>
 
-  </head>
-  <body>
-    <main>
-        <head>
-            <title>
-                Ursula's Porfolio
-            </title>
-            <h1>Critical Computation Lab</h1>
-            <ul><h2> <a href="assignment01.html">Lost and Found</a></h2></ul>
-            <ul><h2> <a href="assignment02.html">Face</a></h2></ul>
-            <ul><h2> <a href="assignment03.html">Clock</a></h2></ul>
-            <ul><h2> <a href="assignment04.html">Exquisiteon Body</a></h2></ul>
-            <ul><h2> <a href="assignment05.html">Glowing Shell</a></h2></ul>
-            <ul><h2> <a href="assignment06.html">Assignment 6</a></h2></ul>
-            <ul><h2> <a href="assignment07.html">Assignment 7</a></h2></ul>
-            
-          
-        </head>
-    </main>
-   
-  </body>
+  <!-- Project Cards Section -->
+  <div class="section">
+    <div class="container">
+      <div class="row center-align">
+        <!-- Project 1 -->
+        <div class="col l6 s12">
+          <a href="assignment01.html">
+            <div class="card accent-3 z-depth-5">
+              <div class="card-image iframe-container">
+                <!-- Embed assignment01.html -->
+                <iframe src="assignment01.html"></iframe>
+              </div>
+              <div class="card-content">
+                <p class="center-align">Project One: Lost and Found</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col l6 s12">
+          <a href="assignment02.html">
+            <div class="card accent-3 z-depth-5">
+              <div class="card-image iframe-container">
+                <!-- Embed assignment02.html -->
+                <iframe src="assignment02.html"></iframe>
+              </div>
+              <div class="card-content">
+                <p class="center-align">Project Two: Face Generator</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row center-align">
+        <!-- Project 3 -->
+        <div class="col l6 s12">
+          <a href="assignment03.html">
+            <div class="card accent-3 z-depth-5">
+              <div class="card-image iframe-container">
+                <!-- Embed assignment03.html -->
+                <iframe src="assignment03.html"></iframe>
+              </div>
+              <div class="card-content">
+                <p class="center-align">Project Three: Experimental Clock</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col l6 s12">
+          <a href="assignment04.html">
+            <div class="card accent-3 z-depth-5">
+              <div class="card-image iframe-container">
+                <!-- Embed assignment04.html -->
+                <iframe src="assignment04.html"></iframe>
+              </div>
+              <div class="card-content">
+                <p class="center-align">Project Four: Exquisite Corpse</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row center-align">
+        <!-- Project 5 -->
+        <div class="col l6 s12">
+          <a href="assignment05.html">
+            <div class="card accent-3 z-depth-5">
+              <div class="card-image iframe-container">
+                <!-- Embed assignment05.html -->
+                <iframe src="assignment05.html"></iframe>
+              </div>
+              <div class="card-content">
+                <p class="center-align">Project Five: Optical Illusion</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="col l6 s12">
+          <a href="assignment06.html">
+            <div class="card accent-3 z-depth-5">
+              <div class="card-image iframe-container">
+                <!-- Embed assignment06.html -->
+                <iframe src="assignment06.html"></iframe>
+              </div>
+              <div class="card-content">
+                <p class="center-align">Project Six: Data Portrait</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
 </html>

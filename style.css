@@ -1,14 +1,95 @@
-.description{
-
+body{ 
+  background-image: linear-gradient(to right top, #ffffff,#ededed);
+  font-family: 'Helvetica', Arial, sans-serif;
+        
 }
 
-#sktech-container{
-    margin: 20px;
+p{
+        font-size:20px;
+        color: black;
+        font-family: 'Helvetica', Arial, sans-serif;
 }
 
-body {
-font-family: "turnip", serif;
-font-weight: 700;
-font-style: normal;
+.card {
+    width: 80%; 
+    margin: auto; 
+  }
 
-}
+  .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; 
+      }
+      
+      .row {
+        margin-bottom: 20px; 
+      }
+      
+      .card {
+        max-width: 500px; 
+        margin: 0 auto; /* Center the cards */
+      }
+      
+      .dynamic-display {
+        border-radius: 10px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .dynamic-display h4 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      
+      .dynamic-display p {
+        font-size: 18px;
+        margin: 0;
+      }
+      
+      .card-content {
+        border-radius: 15px; 
+        overflow: hidden; 
+      }
+    
+      
+      .iframe-container {
+        border-radius: 15px; 
+        overflow: hidden;
+      }
+
+   
+      .card-content p, .card-title {
+        color: black; 
+      }
+      
+     
+      .card:hover .card-content p, .card:hover .card-title {
+        color: black; 
+      }
+      
+       
+    .iframe-container {
+        width: 100%;
+        height: 200px; /* Height of the visible iframe section */
+        overflow: hidden; /* Hide the overflow */
+        position: relative;
+        border-radius: 10px; /* Rounded corners for the card */
+      }
+  
+      .iframe-container iframe {
+        position: absolute;
+        top: -100px; /* Adjust to show the middle content */
+        left: 0;
+        width: 100%;
+        height: 400px; /* Ensure iframe is large enough to cover the visible area */
+        border: none;
+      }
+  
+      /* Hover effect for cards */
+      .card:hover {
+        cursor: pointer;
+        transform: scale(1.03); /* Slight zoom on hover */
+        transition: all 0.3s ease;
+      }
